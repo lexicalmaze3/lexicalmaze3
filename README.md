@@ -32,6 +32,21 @@ MLP achieves R²=0.9994. Interesting result: MLP beats Transformer on tabular
 data — bigger model, worse performance. Early exercise premium learned equally 
 well for American vs European (MAE $0.668 vs $0.686).
 
+**[Pairs Trading RL](https://github.com/lexicalmaze3/pairs-trading-rl)**  
+Cointegration screener + PPO agent trading the spread between equity pairs. 
+Walk-forward across 14 folds (2023–2026). Avg OOS Sharpe 3.50. Discovered and 
+documented a cointegration regime collapse in 2025–2026.
+
+**[Multi-Agent Market Simulation](https://github.com/lexicalmaze3/multi-agent-market-sim)**  
+4 competing RL agents (market maker, momentum trader, arbitrageur, noise trader) 
+in a custom limit order book with real SPY price anchoring. Role-specific rewards 
+produce emergent behavior — 1,249 trades/episode, market maker profitable via 
+spread capture.
+
+**[Earnings Surprise Predictor](https://github.com/lexicalmaze3/earnings-surprise-predictor)**  
+Predicts post-earnings drift direction using fundamental + sentiment features. 
+Built to stress-test assumptions in the main trading bot.
+
 ---
 
 ## What makes this different from most ML portfolios
